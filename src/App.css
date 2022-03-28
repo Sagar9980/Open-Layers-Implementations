@@ -1,6 +1,13 @@
-.App {
-}
-
 .layout__container {
   display: flex;
+  height: 100vh;
+}
+
+.tabs__container {
+  width: 100%;
+}
+.tab__one__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }

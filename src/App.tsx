@@ -1,13 +1,18 @@
 import React from "react";
 import "./App.css";
-import MainLayout from "./Layout/MainLayout";
+import Tab1 from "Tabs/Tab1/Tab1";
+import Sidebar from "Components/Sidebar/Sidebar";
+// import Tab2 from "Tabs/Tab2/Tab2";
 
 function App() {
   return (
     <div className="App">
-      <MainLayout>
-        <p>Hello world</p>
-      </MainLayout>
+      <div className="layout__container">
+        <Sidebar />
+        <div className="tabs__container">
+          <Tab1 />
+        </div>
+      </div>
     </div>
   );
 }

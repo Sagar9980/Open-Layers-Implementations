@@ -1,0 +1,12 @@
+.location__container {
+  width: 300px;
+}
+.location__heading__section {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+}
+.location__title {
+  color: #4d4c4c;
+  margin-left: 20px;
+}
