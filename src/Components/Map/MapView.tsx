@@ -26,27 +26,9 @@ function MapView(props: any) {
         }),
       ],
       view: new View({
-        // center: ol.protransform([37.5662952, 126.9779451], "EPSG:4326"),
-        // center: [0, 0,],
         center: transform([126.9779451, 37.5662952], "EPSG:4326", "EPSG:3857"),
-
         zoom: 15,
       }),
-    });
-
-    const geoMarker = new Feature({
-      // type: "geoMarker",
-      geometry: new Point(
-        transform([126.9779451, 37.5662952], "EPSG:4326", "EPSG:3857")
-      ),
-    });
-    console.log(geoMarker, "geomarkern");
-
-    const geoMarker1 = new Feature({
-      // type: "geoMarker",
-      geometry: new Point(
-        transform([126.97328373, 37.56755685], "EPSG:4326", "EPSG:3857")
-      ),
     });
 
     let featureList: any = [];
@@ -59,7 +41,6 @@ function MapView(props: any) {
         })
       );
     });
-    console.log(featureList, "featurelist");
     const vectorLayer = new VectorLayer({
       source: new VectorSource({
         features: featureList,

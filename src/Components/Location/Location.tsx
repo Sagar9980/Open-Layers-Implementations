@@ -2,7 +2,6 @@ import React from "react";
 import "./Location.css";
 import { ReactComponent as Flag } from "Assets/Icons/flag.svg";
 const Location = (props: any) => {
-  console.log(props.data, "location");
   return (
     <div className="location__container">
       {props?.data &&

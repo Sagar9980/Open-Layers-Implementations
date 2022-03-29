@@ -59,5 +59,3 @@ function Sidebar({ tab }: any) {
 }
 
 export default Sidebar;
-
-// {`sidebar__menu__icon ${selected ? "sidebar__menu__icon-selected" : ""}`}
