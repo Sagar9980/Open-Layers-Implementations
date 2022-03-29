@@ -1,12 +1,43 @@
 .location__container {
-  width: 300px;
+  width: 30%;
 }
 .location__heading__section {
-  padding: 20px 30px;
+  padding: 10px 30px;
   display: flex;
   align-items: center;
 }
 .location__title {
   color: #4d4c4c;
   margin-left: 20px;
+}
+.location__lat,
+.location__long {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.location__detail__section {
+  padding: 0px 30px;
+  margin-bottom: 20px;
+}
+.lattitude,
+.longitude {
+  color: #4d4c4c;
+  font-size: 13px;
+  font-weight: 700;
+}
+.lat__value,
+.long__value {
+  color: #2b4877;
+  border: 0.5px solid #c7c7c7;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 137px;
+  margin: 0;
+  margin-right: 20px;
+}
+hr {
+  border: 1px solid #f4f4f4;
 }
